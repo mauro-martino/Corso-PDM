@@ -3,5 +3,6 @@
 
     <string name="hello">Activity Principale</string>
     <string name="app_name">DueActivity</string>
+    <string name="buttontext">Start</string>
 
 </resources>
