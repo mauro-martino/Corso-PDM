@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<compilation>
+	<brano id="1">
+		<titolo>TFA</titolo>
+		<autore>Galati</autore>
+		<genere>Universitario</genere>
+	</brano>
+	<brano id="2">
+		<titolo>Sansone e il Detti</titolo>
+		<autore>Studio Guantanamo</autore>
+		<genere>Psicologia</genere>
+	</brano>
+	<brano id="3">
+		<titolo>Ci sei tu</titolo>
+		<autore>Nek</autore>
+		<genere>Italiano</genere>
+	</brano>
+</compilation>
