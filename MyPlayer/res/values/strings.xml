@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MyPlayerActivity!</string>
+    <string name="app_name">MyPlayer</string>
+    <string name="bottone1">Start</string>
+    <string name="bottone2">Pause</string>
+
+</resources>
