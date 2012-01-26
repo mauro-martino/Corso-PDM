@@ -7,11 +7,12 @@ import android.graphics.Canvas;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnTouchListener;
 
 public class MyView extends View{
-	private int x=100;
-	private int y=100;
+	private int x = 100;
+	private int y = 100;
+	private int offset_x;
+	private int offset_y;
 	private Bitmap img = null;
 	private boolean dragOn = false;
 
@@ -34,13 +35,15 @@ public class MyView extends View{
 		switch (eventaction) {
 			case MotionEvent.ACTION_DOWN:
 				if (tx > x & tx < x + img.getWidth() & ty > y & ty < y + img.getHeight()){
+					offset_x = x - tx;
+					offset_y = y - ty;
 					Log.d("TAG","Immagine Cliccata");
 					dragOn = true;
 				}
 				break;
 			case MotionEvent.ACTION_MOVE:
-				x = tx;
-				y = ty;
+				x = tx + offset_x;
+				y = ty + offset_y;
 				invalidate();
 				break;
 			case MotionEvent.ACTION_UP:
